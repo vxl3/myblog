@@ -1,39 +1,88 @@
+/* تصميم عصري للمدونة */
 body {
-  font-family: Tahoma, sans-serif;
-  direction: rtl;
+  font-family: "Cairo", sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f7f7f7;
+  background: #f0f2f5;
+  color: #333;
+  line-height: 1.8;
 }
 
 header {
-  background: #333;
+  background: linear-gradient(135deg, #4a90e2, #357ab8);
   color: #fff;
-  padding: 15px;
   text-align: center;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+nav {
+  margin-top: 10px;
 }
 
 nav a {
   color: #fff;
-  margin: 0 10px;
+  margin: 0 15px;
   text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ffd700;
 }
 
 main {
-  padding: 20px;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 15px;
 }
 
 article {
-  margin-bottom: 20px;
-  padding: 15px;
   background: #fff;
-  border-radius: 5px;
-  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+article h2 a {
+  text-decoration: none;
+  color: #4a90e2;
+}
+
+article h2 a:hover {
+  color: #357ab8;
 }
 
 footer {
   text-align: center;
-  padding: 10px;
-  background: #333;
+  padding: 15px;
+  background: #4a90e2;
   color: #fff;
+  margin-top: 30px;
+  font-size: 14px;
+}
+
+/* جعل الموقع متجاوب مع الموبايل */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 22px;
+  }
+  nav a {
+    display: inline-block;
+    margin: 8px;
+    font-size: 14px;
+  }
 }

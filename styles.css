@@ -1,88 +1,107 @@
-/* تصميم عصري للمدونة */
+/* خلفية داكنة مع تأثير نجوم */
 body {
-  font-family: "Cairo", sans-serif;
-  margin: 0;
-  padding: 0;
-  background: #f0f2f5;
-  color: #333;
-  line-height: 1.8;
+    margin: 0;
+    font-family: 'Cairo', sans-serif;
+    background: linear-gradient(135deg, #0b0c10, #1f1c2c);
+    color: #fff;
+    overflow-x: hidden;
 }
 
+/* الهيدر */
 header {
-  background: linear-gradient(135deg, #4a90e2, #357ab8);
-  color: #fff;
-  text-align: center;
-  padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
-header h1 {
-  margin: 0;
-  font-size: 28px;
-}
-
-nav {
-  margin-top: 10px;
+header .logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ff00ff;
 }
 
 nav a {
-  color: #fff;
-  margin: 0 15px;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 16px;
-  transition: color 0.3s;
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
 }
 
 nav a:hover {
-  color: #ffd700;
+    color: #ff00ff;
 }
 
-main {
-  max-width: 800px;
-  margin: 20px auto;
-  padding: 0 15px;
+/* البانر الرئيسي */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    padding: 0 15px;
+    background: url('https://i.ibb.co/tKyYjpt/stars-bg.jpg') no-repeat center center/cover;
 }
 
-article {
-  background: #fff;
-  margin-bottom: 20px;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-  transition: transform 0.3s, box-shadow 0.3s;
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+    color: #fff;
 }
 
-article:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+.hero p {
+    font-size: 18px;
+    color: #ddd;
+    max-width: 500px;
 }
 
-article h2 a {
-  text-decoration: none;
-  color: #4a90e2;
+/* الأزرار */
+.buttons {
+    margin-top: 20px;
 }
 
-article h2 a:hover {
-  color: #357ab8;
+.btn {
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 30px;
+    margin: 10px;
+    font-size: 16px;
+    transition: all 0.3s;
 }
 
+.primary {
+    background: #ff00ff;
+    color: #fff;
+}
+
+.primary:hover {
+    background: #e600e6;
+    transform: scale(1.05);
+}
+
+.secondary {
+    border: 2px solid #ff00ff;
+    color: #ff00ff;
+}
+
+.secondary:hover {
+    background: #ff00ff;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+/* الفوتر */
 footer {
-  text-align: center;
-  padding: 15px;
-  background: #4a90e2;
-  color: #fff;
-  margin-top: 30px;
-  font-size: 14px;
-}
-
-/* جعل الموقع متجاوب مع الموبايل */
-@media (max-width: 600px) {
-  header h1 {
-    font-size: 22px;
-  }
-  nav a {
-    display: inline-block;
-    margin: 8px;
+    text-align: center;
+    padding: 15px;
+    background: rgba(0,0,0,0.6);
     font-size: 14px;
-  }
+    position: relative;
 }

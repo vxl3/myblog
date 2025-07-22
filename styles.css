@@ -1,10 +1,9 @@
-/* خلفية داكنة مع تأثير نجوم */
+/* إعدادات عامة */
 body {
     margin: 0;
     font-family: 'Cairo', sans-serif;
-    background: linear-gradient(135deg, #0b0c10, #1f1c2c);
+    background: #0f0f1a;
     color: #fff;
-    overflow-x: hidden;
 }
 
 /* الهيدر */
@@ -13,52 +12,52 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px 40px;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.6);
     position: fixed;
-    width: 100%;
     top: 0;
-    z-index: 1000;
+    width: 100%;
+    z-index: 999;
 }
 
 header .logo {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: bold;
-    color: #ff00ff;
+    color: #a64eff;
 }
 
 nav a {
     color: #fff;
-    margin: 0 15px;
+    margin-left: 20px;
     text-decoration: none;
     font-size: 16px;
     transition: color 0.3s;
 }
 
 nav a:hover {
-    color: #ff00ff;
+    color: #a64eff;
 }
 
-/* البانر الرئيسي */
+/* القسم الرئيسي */
 .hero {
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    height: 100vh;
+    align-items: center;
     text-align: center;
-    padding: 0 15px;
-    background: url('https://i.ibb.co/tKyYjpt/stars-bg.jpg') no-repeat center center/cover;
+    padding: 0 20px;
+    background: linear-gradient(135deg, #1f1c2c, #0f0f1a);
 }
 
 .hero h1 {
     font-size: 42px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     color: #fff;
 }
 
 .hero p {
     font-size: 18px;
-    color: #ddd;
+    color: #bbb;
     max-width: 500px;
 }
 
@@ -68,40 +67,73 @@ nav a:hover {
 }
 
 .btn {
-    text-decoration: none;
     padding: 12px 25px;
     border-radius: 30px;
     margin: 10px;
     font-size: 16px;
+    text-decoration: none;
+    display: inline-block;
     transition: all 0.3s;
 }
 
 .primary {
-    background: #ff00ff;
+    background: #a64eff;
     color: #fff;
 }
 
 .primary:hover {
-    background: #e600e6;
+    background: #9336ff;
     transform: scale(1.05);
 }
 
 .secondary {
-    border: 2px solid #ff00ff;
-    color: #ff00ff;
+    border: 2px solid #a64eff;
+    color: #a64eff;
 }
 
 .secondary:hover {
-    background: #ff00ff;
+    background: #a64eff;
     color: #fff;
     transform: scale(1.05);
+}
+
+/* المميزات */
+.features {
+    text-align: center;
+    padding: 80px 20px;
+    background: #141423;
+}
+
+.features h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background: #1f1f2e;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    background: #292942;
 }
 
 /* الفوتر */
 footer {
     text-align: center;
     padding: 15px;
-    background: rgba(0,0,0,0.6);
+    background: #0f0f1a;
     font-size: 14px;
-    position: relative;
 }

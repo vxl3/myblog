@@ -1,6 +1,1 @@
-python-telegram-bot
-Pillow
-torch
-diffusers
-transformers
-accelerate
+python-telegram-bot==20.3
